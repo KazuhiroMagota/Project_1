@@ -30,6 +30,15 @@
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bolder;
         }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+            
     </style>
 
 </head>
@@ -66,34 +75,24 @@
     </header>
 
     <!-- form section -->
-    <main class="card-title">
-        <div class="container">
-            <div>
-                <div>
-                    <h2 style="font-family: Arial, Helvetica, sans-serif;">Contact Us</h2>
-                </div>
-                <div class="container">
-                    <form class="ps-4 pt-3" action="#" method="post">
-                        <label for="text">Full name</label>
-                        <input type="text" placeholder="Enter your full name">
-                        <br> <br>
-                        <label for="email">Email Address</label>
-                        <input class="pe-5"  id="email" type="email" placeholder="name@email.com">
-                        <br> <br>
-                        <label for="number" id="tel">Phone Number</label>
-                        <input type="tel">
-                        <br> <br>
-                        <label for="text">Message or Inquiry</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Message or Inquiry"></textarea>
-                        <br> <br>
-                    </form>
-                    <div class="pt-2">
-                        <button class="btn btn-dark mb-4 ms-4" >Submit</button>
-                    </div> 
-                </div>
-            </div>
-        </div>
+    <main class="p-5">
+    <div class="card border-dark mb-3" style="max-width: 30rem;" >
+        <div class="card-body">
+            <form>
+                <label for="textarea">Full name</label>
+                <input type="text" name="textarea" id="textarea" placeholder="name here" required>
+                <label for="email">Email</label>
+                <input class="pe-2" type="email" placeholder="email" required>
+                <label type="number">Phone number</label>
+                <input type="tel" placeholder="Phone number here" required>
+                <label for="text">Message or Inquiry</label>
+                <textarea id="message" name="message" rows="4" placeholder="Message or Inquiry"></textarea>
 
+            </form>
+            <button class="btn btn-dark mt-4">Submit</button>
+
+        </div>
+    </div>
     </main>
 
     <footer class="row p-2 text-center" id="footer">

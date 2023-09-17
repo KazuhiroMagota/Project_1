@@ -1,22 +1,25 @@
+html, body {
+    min-height: 100%;
+}
 header {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
 
+
 footer {
     color: white;
+    background: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
+
 }
 
-#footer {
-    color: white;   
-    position: absolute;
+footer {
+    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0%;
-    background: rgb(0, 0, 0);
     width: 100%;
-    height: 50px;
-}
+    height: 60px;
+    background: rgb(0, 0, 0);
+ }
 

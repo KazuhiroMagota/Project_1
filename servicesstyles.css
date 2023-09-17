@@ -33,3 +33,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+section {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 23px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+main {
+    font-family: 'Times New Roman', Times, serif;
+}
