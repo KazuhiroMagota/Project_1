@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="servicesstyles.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="icon" type="image/x-icon" href="images/android-chrome-192x192.png">
     <style>
         label {
             display: block;
@@ -59,28 +59,51 @@
         <h1>Tokyo</h1>
     </section>
  
-<main>
-    <div class="card border-dark mb-3" style="max-width: 30rem;" >
-        <div class="card-body">
-            <form>
-                <label for="textarea">Destination</label>
-                <input type="text" name="textarea" id="textarea">
-                <label for="date">Check in</label>
-                <input class="pe-2" type="date">
-                <label for="date">Check out</label>
-                <input class="pe-2" type="date">
-                <label for="number">Adults</label>
-                <input type="number" placeholder="2 Adults" min="1">
-                <label for="number">Children</label>
-                <input type="number" placeholder="2 Children" min="1">
-                <label for="number">Room</label>
-                <input type="number" placeholder="01" min="0" max="9">
-            </form>
-            <button class="btn btn-dark mt-4">Search</button>
-
+<main class="container d-flex justify-content-center flex-md-column">
+    <div class="row p-3">
+        <div class="card"style="width: 18rem;">
+            <div class="card-body col-md-12 d-flex align-items-center">
+                <form>
+                    <label for="textarea">Destination</label>
+                    <input class="form-control" type="text" name="textarea" id="textarea" required>
+                <form>
+            </div>
         </div>
     </div>
+    <div class="row p-3">
+        <div class="card p-3" style="width: 18rem;">
+            <div class="card-body col-md-12">
+                <form>
+                    <label for="date">Check in</label>
+                    <input class="form-control" type="date" required>
+                    <label for="date">Check out</label>
+                    <input class="form-control" type="date" required>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row p-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body col-md-12">
+                <form>
+                    <label for="number">Adults</label>
+                    <input class="form-control" type="number" placeholder="2 Adults" min="1" required>
+                    <label for="number">Children</label>
+                    <input class="form-control" type="number" placeholder="2 Children" min="1">
+                    <label for="number">Room</label>
+                    <input class="form-control" type="number" placeholder="01" min="0" max="9">
+                </form>
+            </div>
+        </div>
+    </div>
+
 </main>    
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <button class="btn btn-dark mt-4 ps-4 pe-4">Search offers</button>
+    </div>
+</div>
     <footer class="row p-2 text-center">
         <div class="col-12">
             <h4>All Rights reserved</h4>
